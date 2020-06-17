@@ -11,4 +11,5 @@ import Foundation
 struct Item: Decodable {
     var name: String
     var temperament: String
+    var wikipedia_url: String?
 }

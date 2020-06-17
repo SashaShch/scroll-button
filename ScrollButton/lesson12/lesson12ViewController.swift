@@ -29,10 +29,8 @@ class lesson12ViewController: UIViewController {
                         DispatchQueue.main.async {
                             for i in 0...self.catCount {
                                 if let item = response[i] as? Item {
-                                    
-                                    let cat = (item.name, item.temperament)
-                                    self.catInfo.catInfo.append(cat)
-                                    
+                                    self.catInfo.catInfo.append(item)
+                                    print(item)
                                 }
                             }
                             self.tableView.reloadData()
@@ -40,6 +38,7 @@ class lesson12ViewController: UIViewController {
                     }
                 }
             }
+            
             task.resume()
         }
     }
@@ -56,15 +55,22 @@ extension lesson12ViewController: UITableViewDataSource {
         let cell: CellView
         cell = tableView.dequeueReusableCell(withIdentifier: "info cell", for: indexPath) as! CellView
         
-        cell.breedLabel.text = catInfo.catInfo[indexPath.item].0
-        cell.temperamentLabel.text = catInfo.catInfo[indexPath.item].1
+        cell.breedLabel.text = catInfo.catInfo[indexPath.item].name
+        cell.temperamentLabel.text = catInfo.catInfo[indexPath.item].temperament
         return cell
     }
 }
 extension lesson12ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        
+        if let urlStr = catInfo.catInfo[indexPath.item].wikipedia_url {
+            if let url = URL(string: urlStr) {
+                let request = URLRequest(url: url)
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "CatVikiViewController") as! CatVikiViewController
+                present(vc, animated: true, completion: nil)
+                vc.webView.load(request)
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

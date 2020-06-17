@@ -20,6 +20,8 @@
 		98FDD2342498D4D3001BAD93 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD2332498D4D3001BAD93 /* CellView.swift */; };
 		98FDD2362498D70B001BAD93 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD2352498D70B001BAD93 /* Item.swift */; };
 		98FDD23A249A06FC001BAD93 /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD239249A06FC001BAD93 /* CatModel.swift */; };
+		98FDD23C249A180C001BAD93 /* CatVikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD23B249A180C001BAD93 /* CatVikiViewController.swift */; };
+		98FDD23F249A22C1001BAD93 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FDD23E249A22C1001BAD93 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		98FDD2332498D4D3001BAD93 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		98FDD2352498D70B001BAD93 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		98FDD239249A06FC001BAD93 /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
+		98FDD23B249A180C001BAD93 /* CatVikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatVikiViewController.swift; sourceTree = "<group>"; };
+		98FDD23E249A22C1001BAD93 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98FDD23F249A22C1001BAD93 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 			children = (
 				98A205802486554200BF8108 /* ScrollButton */,
 				98A2057F2486554200BF8108 /* Products */,
+				98FDD23D249A22C0001BAD93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +106,17 @@
 				98FDD2332498D4D3001BAD93 /* CellView.swift */,
 				98FDD2352498D70B001BAD93 /* Item.swift */,
 				98FDD239249A06FC001BAD93 /* CatModel.swift */,
+				98FDD23B249A180C001BAD93 /* CatVikiViewController.swift */,
 			);
 			path = lesson12;
+			sourceTree = "<group>";
+		};
+		98FDD23D249A22C0001BAD93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98FDD23E249A22C1001BAD93 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +197,7 @@
 				98FDD2312498CE9B001BAD93 /* lesson12ViewController.swift in Sources */,
 				98A205822486554200BF8108 /* AppDelegate.swift in Sources */,
 				98FDD2362498D70B001BAD93 /* Item.swift in Sources */,
+				98FDD23C249A180C001BAD93 /* CatVikiViewController.swift in Sources */,
 				98FDD20A2493CBF3001BAD93 /* lesson11ViewController.swift in Sources */,
 				98A205842486554200BF8108 /* SceneDelegate.swift in Sources */,
 				98A205BD248BE22C00BF8108 /* NewViewController.swift in Sources */,

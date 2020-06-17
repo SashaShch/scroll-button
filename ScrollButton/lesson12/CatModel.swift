@@ -9,5 +9,5 @@
 import Foundation
 
 struct Cat {
-    var catInfo: [(String, String)]
+    var catInfo: [Item]
 }
