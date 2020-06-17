@@ -16,6 +16,10 @@
 		98A205BD248BE22C00BF8108 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A205BC248BE22C00BF8108 /* NewViewController.swift */; };
 		98FDD20A2493CBF3001BAD93 /* lesson11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD2092493CBF3001BAD93 /* lesson11ViewController.swift */; };
 		98FDD20C24961CAC001BAD93 /* kenyan coffee stencil sb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98FDD20B2493CEDA001BAD93 /* kenyan coffee stencil sb.ttf */; };
+		98FDD2312498CE9B001BAD93 /* lesson12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD2302498CE9B001BAD93 /* lesson12ViewController.swift */; };
+		98FDD2342498D4D3001BAD93 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD2332498D4D3001BAD93 /* CellView.swift */; };
+		98FDD2362498D70B001BAD93 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD2352498D70B001BAD93 /* Item.swift */; };
+		98FDD23A249A06FC001BAD93 /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD239249A06FC001BAD93 /* CatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		98A205BC248BE22C00BF8108 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		98FDD2092493CBF3001BAD93 /* lesson11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lesson11ViewController.swift; sourceTree = "<group>"; };
 		98FDD20B2493CEDA001BAD93 /* kenyan coffee stencil sb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kenyan coffee stencil sb.ttf"; sourceTree = "<group>"; };
+		98FDD2302498CE9B001BAD93 /* lesson12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lesson12ViewController.swift; sourceTree = "<group>"; };
+		98FDD2332498D4D3001BAD93 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		98FDD2352498D70B001BAD93 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		98FDD239249A06FC001BAD93 /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +74,12 @@
 				98A205812486554200BF8108 /* AppDelegate.swift */,
 				98A205832486554200BF8108 /* SceneDelegate.swift */,
 				98A205852486554200BF8108 /* ViewController.swift */,
+				98FDD2092493CBF3001BAD93 /* lesson11ViewController.swift */,
+				98FDD2322498D491001BAD93 /* lesson12 */,
 				98A205872486554200BF8108 /* Main.storyboard */,
 				98A2058A2486554600BF8108 /* Assets.xcassets */,
 				98A2058C2486554600BF8108 /* LaunchScreen.storyboard */,
 				98A2058F2486554600BF8108 /* Info.plist */,
-				98FDD2092493CBF3001BAD93 /* lesson11ViewController.swift */,
 				98FDD20B2493CEDA001BAD93 /* kenyan coffee stencil sb.ttf */,
 			);
 			path = ScrollButton;
@@ -82,6 +91,17 @@
 				98A205BC248BE22C00BF8108 /* NewViewController.swift */,
 			);
 			path = "GestureRecognizer ";
+			sourceTree = "<group>";
+		};
+		98FDD2322498D491001BAD93 /* lesson12 */ = {
+			isa = PBXGroup;
+			children = (
+				98FDD2302498CE9B001BAD93 /* lesson12ViewController.swift */,
+				98FDD2332498D4D3001BAD93 /* CellView.swift */,
+				98FDD2352498D70B001BAD93 /* Item.swift */,
+				98FDD239249A06FC001BAD93 /* CatModel.swift */,
+			);
+			path = lesson12;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98FDD23A249A06FC001BAD93 /* CatModel.swift in Sources */,
+				98FDD2342498D4D3001BAD93 /* CellView.swift in Sources */,
 				98A205862486554200BF8108 /* ViewController.swift in Sources */,
+				98FDD2312498CE9B001BAD93 /* lesson12ViewController.swift in Sources */,
 				98A205822486554200BF8108 /* AppDelegate.swift in Sources */,
+				98FDD2362498D70B001BAD93 /* Item.swift in Sources */,
 				98FDD20A2493CBF3001BAD93 /* lesson11ViewController.swift in Sources */,
 				98A205842486554200BF8108 /* SceneDelegate.swift in Sources */,
 				98A205BD248BE22C00BF8108 /* NewViewController.swift in Sources */,
