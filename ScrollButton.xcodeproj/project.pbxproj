@@ -22,6 +22,7 @@
 		98FDD23A249A06FC001BAD93 /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD239249A06FC001BAD93 /* CatModel.swift */; };
 		98FDD23C249A180C001BAD93 /* CatVikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD23B249A180C001BAD93 /* CatVikiViewController.swift */; };
 		98FDD23F249A22C1001BAD93 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FDD23E249A22C1001BAD93 /* WebKit.framework */; };
+		98FDD246249FB8C7001BAD93 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDD245249FB8C7001BAD93 /* AnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		98FDD239249A06FC001BAD93 /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
 		98FDD23B249A180C001BAD93 /* CatVikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatVikiViewController.swift; sourceTree = "<group>"; };
 		98FDD23E249A22C1001BAD93 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		98FDD245249FB8C7001BAD93 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		98A205802486554200BF8108 /* ScrollButton */ = {
 			isa = PBXGroup;
 			children = (
+				98FDD244249FB8A3001BAD93 /* lesson13 */,
 				98A205BB248BE20900BF8108 /* GestureRecognizer  */,
 				98A205812486554200BF8108 /* AppDelegate.swift */,
 				98A205832486554200BF8108 /* SceneDelegate.swift */,
@@ -117,6 +120,14 @@
 				98FDD23E249A22C1001BAD93 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98FDD244249FB8A3001BAD93 /* lesson13 */ = {
+			isa = PBXGroup;
+			children = (
+				98FDD245249FB8C7001BAD93 /* AnimationViewController.swift */,
+			);
+			path = lesson13;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +204,7 @@
 			files = (
 				98FDD23A249A06FC001BAD93 /* CatModel.swift in Sources */,
 				98FDD2342498D4D3001BAD93 /* CellView.swift in Sources */,
+				98FDD246249FB8C7001BAD93 /* AnimationViewController.swift in Sources */,
 				98A205862486554200BF8108 /* ViewController.swift in Sources */,
 				98FDD2312498CE9B001BAD93 /* lesson12ViewController.swift in Sources */,
 				98A205822486554200BF8108 /* AppDelegate.swift in Sources */,

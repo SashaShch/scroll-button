@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i9I-bU-Bcf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n4g-8e-Zhl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -226,6 +226,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPM-d8-KRk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3362.3188405797105" y="109.82142857142857"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="grU-PC-WP1">
+            <objects>
+                <viewController id="n4g-8e-Zhl" customClass="AnimationViewController" customModule="ScrollButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FrD-LR-qCw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gbo-Aa-owt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите что-то)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwu-jW-co2">
+                                <rect key="frame" x="50" y="221" width="314" height="50"/>
+                                <color key="backgroundColor" red="0.85196189209999995" green="0.844910512" blue="0.98182445159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ze6-Bt-d3C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJl-El-h5P">
+                                <rect key="frame" x="50" y="314" width="314" height="50"/>
+                                <color key="backgroundColor" red="0.85196189209999995" green="0.844910512" blue="0.98182445159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fnr-pc-kM5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Готово">
+                                    <color key="titleColor" red="0.41409801070000002" green="0.39760513460000002" blue="0.51686695780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="n4g-8e-Zhl" eventType="touchUpInside" id="lQp-xi-Gr5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="64d-aP-TwD" firstAttribute="trailing" secondItem="Gbo-Aa-owt" secondAttribute="trailing" id="2hN-l3-5d9"/>
+                            <constraint firstItem="Gbo-Aa-owt" firstAttribute="top" secondItem="64d-aP-TwD" secondAttribute="top" id="6Mf-hp-iAN"/>
+                            <constraint firstItem="wwu-jW-co2" firstAttribute="leading" secondItem="64d-aP-TwD" secondAttribute="leading" constant="50" id="ING-hH-EUq"/>
+                            <constraint firstItem="JJl-El-h5P" firstAttribute="top" secondItem="wwu-jW-co2" secondAttribute="bottom" constant="43" id="V5F-kL-OKI"/>
+                            <constraint firstItem="64d-aP-TwD" firstAttribute="trailing" secondItem="wwu-jW-co2" secondAttribute="trailing" constant="50" id="YJX-kB-y5g"/>
+                            <constraint firstItem="Gbo-Aa-owt" firstAttribute="leading" secondItem="64d-aP-TwD" secondAttribute="leading" id="YQ6-wS-YAk"/>
+                            <constraint firstItem="64d-aP-TwD" firstAttribute="trailing" secondItem="JJl-El-h5P" secondAttribute="trailing" constant="50" id="Zuo-mg-11r"/>
+                            <constraint firstItem="JJl-El-h5P" firstAttribute="leading" secondItem="64d-aP-TwD" secondAttribute="leading" constant="50" id="ayT-Bh-mTT"/>
+                            <constraint firstItem="wwu-jW-co2" firstAttribute="top" secondItem="64d-aP-TwD" secondAttribute="top" constant="177" id="gjH-Hv-747"/>
+                            <constraint firstItem="64d-aP-TwD" firstAttribute="bottom" secondItem="Gbo-Aa-owt" secondAttribute="bottom" id="iPJ-mo-gDr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="64d-aP-TwD"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="JJl-El-h5P" id="hBE-42-BEH"/>
+                        <outlet property="imageView" destination="Gbo-Aa-owt" id="RUq-1q-JnG"/>
+                        <outlet property="textField" destination="wwu-jW-co2" id="FAP-gv-1oV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tar-1U-KT7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4244" y="108"/>
         </scene>
     </scenes>
     <resources>
